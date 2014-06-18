@@ -33,11 +33,11 @@ function search(e) {
 	txt = se.val();
 	d = {
 		t: txt
-	}
+	};
 	s = {
 		data : d,
 		success : searchComplete
-	}
+	};
 	$.ajax(base,s);
 }
 
@@ -50,10 +50,6 @@ function showResults(dr) {
 	html = "";
 	html += "<h4>" + dr.Title + "</h4>";
 	html += "<table>";
-	/*
-	html += "<tr><td><strong>Rated:</strong></td><td>" + dr.Rated + "</td></tr>";
-	html += "<tr><td><strong>Plot:</strong></td><td>" + dr.Plot + "</td></tr>";
-	html += "<tr><td><strong>Starring:</strong></td><td>" + dr.Actors + "</td></tr>"; */
 	for (prop in dr) {
 		if ( prop == "Poster") {
 			//html += '<tr><td>' + prop + '</td><td><img src="' + dr[prop] + '" /></td></tr>';
