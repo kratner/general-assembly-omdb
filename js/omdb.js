@@ -1,7 +1,7 @@
 // omdb.js
 var $ = jQuery.noConflict();
-//http://www.omdbapi.com/?t=True Grit):
-var base = "http://www.omdbapi.com/"
+
+var base = "http://www.omdbapi.com/";
 
 var se;
 var sb;
